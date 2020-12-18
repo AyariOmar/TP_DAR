@@ -27,13 +27,21 @@ public class Server {
         String str = inServer.readLine();
         int n = Integer.parseInt(str);
         System.out.println(n);
-        for (int x=1;x<=n;x++){
+        for (int x=1;x<=n;x++)
+        {
             int i=2;
             while (i<=x/2){
-                if (x%i==0) break;
-                else i++;
+                if(x!=1) 
+                {
+
+                    if (x%i==0) 
+                    break;
+                    else 
+                    i++;
+                }
             }
-            if (i>x/2) System.out.println(x);
+            if (i>x/2)
+             System.out.println(x);
         }
 
         // Close in / out
